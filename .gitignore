@@ -1,2 +1,43 @@
+dist/
+snag.crx
+snag.pem
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
 *.crx
+
+# Private key (used for deterministic extension ID)
 *.pem
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Chrome Extension specific
+.crx/
+*.zip
+coverage/
+
+# Local environment files
+.env
+.env.*
+*.local
+
+# GitHub workflows artifacts (optional)
+.github/workflows/*.log
+
