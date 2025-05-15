@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Snag",
+  "version": "1.2",
+  "description": "One-click full-page PNG screenshots with metadata, save and clipboard support.",
+  "permissions": [
+    "tabs",
+    "downloads",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Snag — Click to capture full-page\nShift+Click to copy to clipboard",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "commands": {
+    "trigger-snag-save": {
+      "suggested_key": {
+        "default": "Shift+Ctrl+P"
+      },
+      "description": "Capture full-page PNG and prompt to save"
+    }
+  }
+}
+
